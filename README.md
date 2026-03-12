@@ -1,112 +1,172 @@
-<div align="center">
- <h1> <img src="https://crypto-dashboard-vg.vercel.app/logo.png" width="80px"><br/>Crypto Dashboard</h1>
- <a href="https://www.buymeacoffee.com/VishwaGauravIn" target="_blank"><img alt="" src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=flat&logo=buy-me-a-coffee&logoColor=black" style="vertical-align:center" /></a>
- <img src="https://img.shields.io/npm/v/npm?style=normal"/>
- <img src="https://img.shields.io/website?style=normal&url=https%3A%2F%2Fcrypto-dashboard-vg.vercel.app/"/> 
- <img src="https://img.shields.io/badge/License-AGPL%20v3-brightgreen?style=normal"/>
- <img src="https://img.shields.io/github/languages/code-size/VishwaGauravIn/crypto-dashboard?logo=github&style=normal"/>
+CryptoPulse – Cryptocurrency Analytics Dashboard
+<div align="center"> <img src="https://crypto-dashboard-vg.vercel.app/logo.png" width="90"/>
+Real-time Cryptocurrency Market Analytics Platform
+
+A modern web dashboard to monitor cryptocurrency markets, analyze trends, and explore detailed insights about digital assets in real time.
+
 </div>
-<br/>
+Overview
 
-![image](https://github.com/user-attachments/assets/32a14d0c-2c8a-4544-9435-863e32d636e0)
+CryptoPulse is a modern cryptocurrency analytics dashboard built to track market performance and explore digital asset trends. The platform provides real-time information about popular cryptocurrencies, global market movements, and detailed coin statistics through a clean and responsive interface.
 
-# Features
-We've got everything that you need! A Crypto Dashboard to check all details about crypo coins, global trends, news, market outlook, and more.
+The goal of this project is to demonstrate how a data-driven financial dashboard can be built using modern web technologies like Next.js, TypeScript, and Tailwind.
 
-## ⚡ Market Outlook, Trending and Top Coins
-![image](https://github.com/user-attachments/assets/32a14d0c-2c8a-4544-9435-863e32d636e0)
+Key Capabilities
+Market Overview Dashboard
 
----
+Get a quick snapshot of the cryptocurrency market including top coins, market capitalization, price movements, and trending assets.
 
-## 🔍 Instant Search Mode
-![image](https://github.com/user-attachments/assets/ec0e6292-c782-49e2-ad0e-53445d8d1d2d)
+Smart Coin Search
 
----
+Search any cryptocurrency instantly and navigate to detailed analytics pages.
 
-## 🌐 Explore Crypto Coins
-![image](https://github.com/user-attachments/assets/c5e5e1b3-fbff-4f2a-90b1-5bc6f5105f7b)
+Coin Analytics Page
 
----
+Each cryptocurrency has a dedicated page displaying:
 
-## 🪙 Get in-dept details about coins 
-![image](https://github.com/user-attachments/assets/f08e6b86-ce82-468b-aaa8-e41c59b987db)
+price history
 
----
+market capitalization
 
-## 🌖 Light/Dark Mode
-![image](https://github.com/user-attachments/assets/83f22249-fa0f-4af1-b971-26c6596dcf16)
+trading volume
 
----
+price changes
 
-### 🔴 Realtime Data with periodic refresh
+supply metrics
 
-### 🪄 Magic Optimisation to reduce API calls
+Trending Coins
 
-### 🗝️ Authentication support
+Discover trending cryptocurrencies based on market activity and popularity.
 
-### 📦 PWA Support for all devices
+Global Market Metrics
 
-.... and more
+Track overall market health including:
 
-## Our Social Links
-[![X](https://img.shields.io/badge/X-black.svg?style=normal&logo=X&logoColor=white)](https://x.com/VishwaGauravIn)
-[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=normal&logo=linkedin&logoColor=white)](https://linkedin.com/in/VishwaGauravIn)
+total market cap
 
-## PageSpeed Insights
-![psi](https://github.com/VishwaGauravIn/youtube-word-frequency-counter/assets/81325730/eb1e6103-9516-4909-bf79-c1a4af930bfb)
+total trading volume
 
-## 🕜 Total time spend on this project: ~24hrs
+market dominance
 
-## Tech Used
-![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+Light & Dark Interface
 
-[![image](https://user-images.githubusercontent.com/81325730/209995550-63bdb319-f8fd-4383-bcfc-9021c4bc5642.png)](https://vercel.com/?utm_source=team_vishwagauravin&utm_campaign=oss)
+Users can switch between dark and light themes for comfortable viewing.
 
-<details>
-<summary>
-  NextJS Guide
-</summary>
+Real-Time Data Updates
 
-## Getting Started
+The application fetches cryptocurrency data periodically to keep the dashboard updated without excessive API calls.
 
-First, run the development server:
+Progressive Web App Support
 
-```bash
+The platform can be installed as a PWA allowing users to access the dashboard like a native application on mobile or desktop.
+
+Technology Stack
+
+Core technologies used in this project:
+
+Frontend
+
+Next.js
+
+React
+
+TypeScript
+
+TailwindCSS
+
+State & Data
+
+Zustand for state management
+
+Axios for API requests
+
+UI
+
+Radix UI
+
+Lucide Icons
+
+Recharts for visualizations
+
+Other
+
+NextAuth for authentication
+
+Next-PWA for progressive web app support
+
+System Architecture
+
+The application follows a modular architecture with separation between UI, state management, and API communication.
+
+src
+ ├ components
+ │   ├ dashboard
+ │   ├ coin
+ │   └ shared
+ │
+ ├ pages / app
+ │   ├ dashboard
+ │   ├ coin details
+ │   └ search
+ │
+ ├ store
+ │   └ market data state
+ │
+ ├ services
+ │   └ crypto API integration
+ │
+ └ utils
+     └ helper functions
+
+This structure allows scalable development and clear separation of responsibilities.
+
+Running the Project Locally
+
+Clone the repository:
+
+git clone https://github.com/YOUR_USERNAME/crypto-dashboard.git
+
+Install dependencies:
+
+npm install
+
+Start the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open in browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
+Example Use Cases
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This dashboard can be useful for:
 
-## Learn More
+crypto traders
 
-To learn more about Next.js, take a look at the following resources:
+market analysts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+fintech product prototypes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+data visualization learning
 
-## Deploy on Vercel
+Future Enhancements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Potential improvements planned for the platform:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+user watchlist for favorite coins
 
-  
-</details>
+portfolio tracking
+
+price alerts
+
+advanced chart indicators
+
+multi-exchange comparison
+
+Project Purpose
+
+This project demonstrates how to build a financial analytics dashboard using modern full-stack JavaScript technologies and scalable frontend architecture.
+
+License
+
+This project is available under the AGPL v3 license.
