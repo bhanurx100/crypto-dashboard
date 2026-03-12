@@ -1,172 +1,103 @@
-CryptoPulse – Cryptocurrency Analytics Dashboard
-<div align="center"> <img src="https://crypto-dashboard-vg.vercel.app/logo.png" width="90"/>
-Real-time Cryptocurrency Market Analytics Platform
-
-A modern web dashboard to monitor cryptocurrency markets, analyze trends, and explore detailed insights about digital assets in real time.
-
+<div align="center">
+ <h1> <img src="https://crypto-dashboard-vg.vercel.app/logo.png" width="80px"><br/>Crypto Dashboard</h1>
+ 
+ <img src="https://img.shields.io/npm/v/npm?style=normal"/>
+ <img src="https://img.shields.io/website?style=normal&url=https%3A%2F%2Fcrypto-dashboard-vg.vercel.app/"/> 
+ <img src="https://img.shields.io/badge/License-AGPL%20v3-brightgreen?style=normal"/>
+ <img src="https://img.shields.io/github/languages/code-size/VishwaGauravIn/crypto-dashboard?logo=github&style=normal"/>
 </div>
-Overview
+<br/>
 
-CryptoPulse is a modern cryptocurrency analytics dashboard built to track market performance and explore digital asset trends. The platform provides real-time information about popular cryptocurrencies, global market movements, and detailed coin statistics through a clean and responsive interface.
+![image](https://github.com/user-attachments/assets/32a14d0c-2c8a-4544-9435-863e32d636e0)
 
-The goal of this project is to demonstrate how a data-driven financial dashboard can be built using modern web technologies like Next.js, TypeScript, and Tailwind.
+# Features
+We've got everything that you need! A Crypto Dashboard to check all details about crypo coins, global trends, news, market outlook, and more.
 
-Key Capabilities
-Market Overview Dashboard
+## ⚡ Market Outlook, Trending and Top Coins
+![image](https://github.com/user-attachments/assets/32a14d0c-2c8a-4544-9435-863e32d636e0)
 
-Get a quick snapshot of the cryptocurrency market including top coins, market capitalization, price movements, and trending assets.
+---
 
-Smart Coin Search
+## 🔍 Instant Search Mode
+![image](https://github.com/user-attachments/assets/ec0e6292-c782-49e2-ad0e-53445d8d1d2d)
 
-Search any cryptocurrency instantly and navigate to detailed analytics pages.
+---
 
-Coin Analytics Page
+## 🌐 Explore Crypto Coins
+![image](https://github.com/user-attachments/assets/c5e5e1b3-fbff-4f2a-90b1-5bc6f5105f7b)
 
-Each cryptocurrency has a dedicated page displaying:
+---
 
-price history
+## 🪙 Get in-dept details about coins 
+![image](https://github.com/user-attachments/assets/f08e6b86-ce82-468b-aaa8-e41c59b987db)
 
-market capitalization
+---
 
-trading volume
+## 🌖 Light/Dark Mode
+![image](https://github.com/user-attachments/assets/83f22249-fa0f-4af1-b971-26c6596dcf16)
 
-price changes
+---
 
-supply metrics
+### 🔴 Realtime Data with periodic refresh
 
-Trending Coins
+### 🪄 Magic Optimisation to reduce API calls
 
-Discover trending cryptocurrencies based on market activity and popularity.
+### 🗝️ Authentication support
 
-Global Market Metrics
+### 📦 PWA Support for all devices
 
-Track overall market health including:
+.... and more
 
-total market cap
+## 🕜 Total time spend on this project: ~24hrs
 
-total trading volume
+## Tech Used
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
-market dominance
+<details>
+<summary>
+  NextJS Guide
+</summary>
 
-Light & Dark Interface
+## Getting Started
 
-Users can switch between dark and light themes for comfortable viewing.
+First, run the development server:
 
-Real-Time Data Updates
-
-The application fetches cryptocurrency data periodically to keep the dashboard updated without excessive API calls.
-
-Progressive Web App Support
-
-The platform can be installed as a PWA allowing users to access the dashboard like a native application on mobile or desktop.
-
-Technology Stack
-
-Core technologies used in this project:
-
-Frontend
-
-Next.js
-
-React
-
-TypeScript
-
-TailwindCSS
-
-State & Data
-
-Zustand for state management
-
-Axios for API requests
-
-UI
-
-Radix UI
-
-Lucide Icons
-
-Recharts for visualizations
-
-Other
-
-NextAuth for authentication
-
-Next-PWA for progressive web app support
-
-System Architecture
-
-The application follows a modular architecture with separation between UI, state management, and API communication.
-
-src
- ├ components
- │   ├ dashboard
- │   ├ coin
- │   └ shared
- │
- ├ pages / app
- │   ├ dashboard
- │   ├ coin details
- │   └ search
- │
- ├ store
- │   └ market data state
- │
- ├ services
- │   └ crypto API integration
- │
- └ utils
-     └ helper functions
-
-This structure allows scalable development and clear separation of responsibilities.
-
-Running the Project Locally
-
-Clone the repository:
-
-git clone https://github.com/YOUR_USERNAME/crypto-dashboard.git
-
-Install dependencies:
-
-npm install
-
-Start the development server:
-
+```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Open in browser:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-http://localhost:3000
-Example Use Cases
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This dashboard can be useful for:
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-crypto traders
+## Learn More
 
-market analysts
+To learn more about Next.js, take a look at the following resources:
 
-fintech product prototypes
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-data visualization learning
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-Future Enhancements
+## Deploy on Vercel
 
-Potential improvements planned for the platform:
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-user watchlist for favorite coins
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-portfolio tracking
-
-price alerts
-
-advanced chart indicators
-
-multi-exchange comparison
-
-Project Purpose
-
-This project demonstrates how to build a financial analytics dashboard using modern full-stack JavaScript technologies and scalable frontend architecture.
-
-License
-
-This project is available under the AGPL v3 license.
+  
+</details>
