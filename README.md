@@ -1,103 +1,255 @@
-<div align="center">
- <h1> <img src="https://crypto-dashboard-vg.vercel.app/logo.png" width="80px"><br/>Crypto Dashboard</h1>
- 
- <img src="https://img.shields.io/npm/v/npm?style=normal"/>
- <img src="https://img.shields.io/website?style=normal&url=https%3A%2F%2Fcrypto-dashboard-vg.vercel.app/"/> 
- <img src="https://img.shields.io/badge/License-AGPL%20v3-brightgreen?style=normal"/>
- <img src="https://img.shields.io/github/languages/code-size/VishwaGauravIn/crypto-dashboard?logo=github&style=normal"/>
-</div>
-<br/>
+# Crypto Dashboard
 
-![image](https://github.com/user-attachments/assets/32a14d0c-2c8a-4544-9435-863e32d636e0)
+A modern, feature-rich cryptocurrency dashboard built with Next.js 14, TypeScript, and Tailwind CSS. Track real-time cryptocurrency prices, market trends, and global statistics with an intuitive and responsive interface.
 
-# Features
-We've got everything that you need! A Crypto Dashboard to check all details about crypo coins, global trends, news, market outlook, and more.
+## 🚀 Features
 
-## ⚡ Market Outlook, Trending and Top Coins
-![image](https://github.com/user-attachments/assets/32a14d0c-2c8a-4544-9435-863e32d636e0)
+### Core Functionality
+- **Real-time Cryptocurrency Data**: Live prices, market caps, and 24h volume tracking
+- **Advanced Search**: Filter and search through 100+ cryptocurrencies
+- **Detailed Coin Analysis**: Comprehensive statistics, historical data, and price charts
+- **Global Market Overview**: Total market cap, 24h volume, and market dominance
+- **Trending Coins**: Discover trending cryptocurrencies in real-time
+- **Price Charts**: Interactive historical price charts with multiple timeframes
+- **Dark/Light Mode**: Seamless theme switching with system preference detection
 
----
+### Technical Features
+- **Progressive Web App (PWA)**: Installable on mobile devices with offline support
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **TypeScript**: Type-safe development with full TypeScript support
+- **Modern UI/UX**: Built with Radix UI components and Tailwind CSS
+- **Authentication**: NextAuth.js integration with Google OAuth support
+- **State Management**: Zustand for efficient client-side state management
+- **API Integration**: CoinRanking API for comprehensive cryptocurrency data
+- **Code Quality**: ESLint, Prettier, and Husky pre-commit hooks
 
-## 🔍 Instant Search Mode
-![image](https://github.com/user-attachments/assets/ec0e6292-c782-49e2-ad0e-53445d8d1d2d)
+## 🛠️ Tech Stack
 
----
+### Frontend
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS + CSS Modules
+- **UI Components**: Radix UI + Lucide React icons
+- **Charts**: Recharts for data visualization
+- **State Management**: Zustand
+- **Authentication**: NextAuth.js
 
-## 🌐 Explore Crypto Coins
-![image](https://github.com/user-attachments/assets/c5e5e1b3-fbff-4f2a-90b1-5bc6f5105f7b)
+### Development Tools
+- **Package Manager**: npm
+- **Code Quality**: ESLint + Prettier
+- **Git Hooks**: Husky + lint-staged
+- **PWA**: next-pwa
+- **Loading**: nextjs-toploader
+- **Notifications**: Sonner (toast notifications)
 
----
+### APIs & Services
+- **Crypto Data**: CoinRanking API
+- **Authentication**: Google OAuth via NextAuth.js
+- **News**: Crypto news integration
 
-## 🪙 Get in-dept details about coins 
-![image](https://github.com/user-attachments/assets/f08e6b86-ce82-468b-aaa8-e41c59b987db)
+## 📦 Installation
 
----
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
-## 🌖 Light/Dark Mode
-![image](https://github.com/user-attachments/assets/83f22249-fa0f-4af1-b971-26c6596dcf16)
+### Setup Instructions
 
----
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/bhanurx100/crypto-dashboard.git
+   cd crypto-dashboard
+   ```
 
-### 🔴 Realtime Data with periodic refresh
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-### 🪄 Magic Optimisation to reduce API calls
+3. **Environment Setup**
+   ```bash
+   cp .env.local.sample .env.local
+   ```
 
-### 🗝️ Authentication support
+4. **Configure Environment Variables**
+   Edit `.env.local` and add your API keys:
+   ```env
+   # CoinRanking API
+   NEXT_PUBLIC_COINGECKO_API_KEY=your_coinranking_api_key
+   
+   # Google OAuth (Optional)
+   GOOGLE_ID=your_google_client_id
+   GOOGLE_SECRET=your_google_client_secret
+   NEXTAUTH_URL=http://localhost:3000
+   NEXTAUTH_SECRET=your_nextauth_secret
+   ```
 
-### 📦 PWA Support for all devices
+5. **Start Development Server**
+   ```bash
+   npm run dev
+   ```
 
-.... and more
+6. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-## 🕜 Total time spend on this project: ~24hrs
+## 🔧 Configuration
 
-## Tech Used
-![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+### API Keys Setup
 
-<details>
-<summary>
-  NextJS Guide
-</summary>
+1. **CoinRanking API**
+   - Sign up at [CoinRanking](https://coinranking.com/api)
+   - Get your API key from the dashboard
+   - Add it to `NEXT_PUBLIC_COINGECKO_API_KEY` in `.env.local`
 
-## Getting Started
+2. **Google OAuth (Optional)**
+   - Go to [Google Cloud Console](https://console.cloud.google.com/)
+   - Create a new project or select existing one
+   - Enable Google+ API
+   - Create OAuth 2.0 credentials
+   - Add the credentials to your environment variables
 
-First, run the development server:
+## 📱 Usage
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Main Features
+
+1. **Dashboard Overview**
+   - View global cryptocurrency market statistics
+   - Track top 10 cryptocurrencies by market cap
+   - Discover trending coins
+
+2. **Cryptocurrency Explorer**
+   - Browse 100+ cryptocurrencies
+   - Search and filter by name
+   - View detailed statistics for each coin
+
+3. **Coin Details**
+   - Comprehensive coin statistics
+   - Historical price charts
+   - Market analysis and trends
+   - Official links and resources
+
+4. **Theme Customization**
+   - Toggle between light and dark modes
+   - System preference detection
+   - Persistent theme selection
+
+## 🏗️ Project Structure
+
+```
+crypto-dashboard/
+├── public/                 # Static assets and PWA files
+├── src/
+│   ├── app/               # Next.js App Router pages
+│   │   ├── api/          # API routes
+│   │   ├── coin/         # Coin-specific pages
+│   │   └── explore/      # Cryptocurrency explorer
+│   ├── components/        # Reusable React components
+│   │   ├── dashboard/    # Dashboard components
+│   │   ├── ui/           # Base UI components
+│   │   └── ...           # Other feature components
+│   ├── services/         # API service configurations
+│   ├── store/            # State management
+│   ├── lib/              # Utility functions
+│   └── container/        # Layout containers
+├── .husky/               # Git hooks
+├── .vscode/              # VS Code settings
+└── ...                   # Configuration files
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Available Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Development
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run start        # Start production server
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Code Quality
+npm run lint         # Run ESLint
+npm run prepare      # Setup Husky hooks
+```
 
-## Learn More
+## 🎨 Customization
 
-To learn more about Next.js, take a look at the following resources:
+### Adding New Features
+1. Create components in `src/components/`
+2. Add API endpoints in `src/services/`
+3. Update state management in `src/store/`
+4. Add routes in `src/app/`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Styling
+- Modify `tailwind.config.ts` for theme customization
+- Update `src/app/globals.css` for global styles
+- Use CSS Modules for component-specific styles
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 📊 API Integration
 
-## Deploy on Vercel
+### CoinRanking API Endpoints Used
+- `/coins` - List of cryptocurrencies
+- `/coin/{id}` - Coin details
+- `/coin/{id}/history` - Historical price data
+- `/stats` - Global market statistics
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Rate Limits
+- Free tier: 100 requests per day
+- Consider upgrading for production use
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🔒 Security
 
-  
-</details>
+- Environment variables for sensitive data
+- NextAuth.js for secure authentication
+- API key protection
+- CORS configuration
+- Content Security Policy headers
+
+## 🌐 Deployment
+
+### Vercel (Recommended)
+1. Connect your GitHub repository to Vercel
+2. Add environment variables in Vercel dashboard
+3. Deploy automatically on push to main branch
+
+### Other Platforms
+```bash
+npm run build
+npm run start
+```
+
+Ensure environment variables are properly configured in your hosting platform.
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+### Development Guidelines
+- Follow TypeScript best practices
+- Use ESLint and Prettier configurations
+- Write meaningful commit messages
+- Test your changes thoroughly
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [CoinRanking](https://coinranking.com/) for cryptocurrency data API
+- [Next.js](https://nextjs.org/) for the React framework
+- [Tailwind CSS](https://tailwindcss.com/) for styling
+- [Radix UI](https://www.radix-ui.com/) for accessible components
+- [Recharts](https://recharts.org/) for data visualization
+
+## 📞 Support
+
+If you have any questions or need support, please:
+- Open an issue on GitHub
+- Check the [documentation](https://github.com/bhanurx100/crypto-dashboard/wiki)
+- Review existing issues and discussions
+
+---
+
+**Built with ❤️ by [Bhanu Prakash](https://github.com/bhanurx100)**
