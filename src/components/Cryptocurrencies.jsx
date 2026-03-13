@@ -16,11 +16,11 @@ const Cryptocurrencies = ({ simplified }) => {
   // Filter search data
   useEffect(() => {
     const re = RegExp(
-      `.*${searchTerm.toLowerCase().replace(/\s+/g, "").split("").join(".*")}.*`
+      `.*${searchTerm.toLowerCase().replace(/\s+/g, "").split("").join(".*")}.*`,
     );
 
     const filteredData = cryptosList?.data?.coins.filter((coin) =>
-      coin.name.toLowerCase().match(re)
+      coin.name.toLowerCase().match(re),
     );
 
     setCryptos(filteredData);
@@ -60,7 +60,7 @@ const Cryptocurrencies = ({ simplified }) => {
                 <Card
                   title={`${currency.rank}. ${currency.name}`}
                   extra={
-                    <img
+                    <image
                       className="crypto-image"
                       src={currency.iconUrl}
                       alt={currency.name}
