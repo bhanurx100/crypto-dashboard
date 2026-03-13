@@ -1,4 +1,5 @@
 # Crypto Dashboard
+<img width="1888" height="861" alt="image" src="https://github.com/user-attachments/assets/6025060b-e703-4078-82e0-5d6822a918cf" />
 
 A modern, feature-rich cryptocurrency dashboard built with Next.js 14, TypeScript, and Tailwind CSS. Track real-time cryptocurrency prices, market trends, and global statistics with an intuitive and responsive interface.
 
